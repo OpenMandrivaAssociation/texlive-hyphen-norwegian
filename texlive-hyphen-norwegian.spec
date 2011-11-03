@@ -1,5 +1,11 @@
+# revision 23085
+# category TLCore
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-hyphen-norwegian
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	Norwegian Bokmal and Nynorsk hyphenation patterns
 Group:		Publishing
@@ -47,6 +53,7 @@ and UTF-8 encodings.
 %_texmf_language_dat_d/hyphen-norwegian
 %_texmf_language_def_d/hyphen-norwegian
 %_texmf_language_lua_d/hyphen-norwegian
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,6 +62,8 @@ and UTF-8 encodings.
 %build
 
 %install
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-norwegian <<EOF
 %% from hyphen-norwegian:
