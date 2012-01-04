@@ -45,7 +45,7 @@ and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-norwegian <<EOF
-%% from hyphen-norwegian:
+\%\% from hyphen-norwegian:
 bokmal loadhyph-nb.tex
 =norwegian
 =norsk
@@ -53,7 +53,7 @@ nynorsk loadhyph-nn.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-norwegian <<EOF
-%% from hyphen-norwegian:
+\%\% from hyphen-norwegian:
 \addlanguage{bokmal}{loadhyph-nb.tex}{}{2}{2}
 \addlanguage{norwegian}{loadhyph-nb.tex}{}{2}{2}
 \addlanguage{norsk}{loadhyph-nb.tex}{}{2}{2}
