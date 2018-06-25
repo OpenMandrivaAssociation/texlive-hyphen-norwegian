@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-norwegian
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Norwegian Bokmal and Nynorsk hyphenation patterns
 Group:		Publishing
