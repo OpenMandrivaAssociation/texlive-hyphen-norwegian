@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-norwegian
 Version:	58609
-Release:	1
+Release:	2
 Summary:	Norwegian Bokmal and Nynorsk hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
